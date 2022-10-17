@@ -1,0 +1,14 @@
+spring:
+  redis:
+    host: 124.222.106.122
+    port: 6379
+    password: chuang
+    jedis:
+      pool:
+        enabled: true
+        min-idle: 0
+        max-idle: 16
+        max-active: 16
+        max-wait: -1
+    timeout: 2000   #连接超时
+    database: 1

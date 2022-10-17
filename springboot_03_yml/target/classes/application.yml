@@ -1,0 +1,44 @@
+#服务器端口配置
+server:
+  port: 80
+  servlet:
+    context-path: /springboot
+
+
+
+#自定义配置参数
+province: anhui
+city: fuyang
+area: yingdongqu
+
+user:
+  name: xiaoming
+  age: 18
+
+like:
+  - eat
+  - sleep
+  - run
+  - book
+
+# 引用
+baseDir: C:\java\gitdat
+# 使用${属性名}引用属性
+tmpDir: ${basedir}\springboot
+tmpDir2: ${basedir}\springboot2
+# 使用""包裹的字符串，其中的转义字符可以生效
+tmpDir3: "${basedir}\tspringboot2 \t1 \t2"
+
+# 其他数据
+yundong: go
+chihe: chi
+hejiu: he
+
+
+# dataSource
+datasource:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost/springboot_db
+  username: root
+  password: root123
+

@@ -1,0 +1,10 @@
+#配置相关信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.15.4.35:3306/liuliangmybatis
+    password: mybatis%2022
+    username: mybatis
+
+
+

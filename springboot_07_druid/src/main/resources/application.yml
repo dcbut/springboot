@@ -1,0 +1,16 @@
+#配置相关信息
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://106.15.4.35:3306/liuliangmybatis
+#    password: mybatis%2022
+#    username: mybatis
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://106.15.4.35:3306/liuliangmybatis
+      username: mybatis
+      password: mybatis%2022

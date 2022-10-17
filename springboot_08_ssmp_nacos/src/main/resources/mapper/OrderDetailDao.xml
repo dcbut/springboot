@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dcxuexi.dao.OrderDetailDao">
+    <select id="selectUserName" resultType="com.dcxuexi.domian.OrderDetail">
+        SELECT id,user_name,user_id,tunnel_name,tunnel_sn,amount,start_time,yddingdan,ltdingdan,g,successnum,is_execute,exec_time
+            FROM order_detail
+            limit 5
+    </select>
+</mapper>

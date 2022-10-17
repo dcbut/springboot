@@ -1,0 +1,7 @@
+server:
+  port: 80
+spring:
+  devtools:
+    restart:
+      exclude: static/**,public/**,config/** #设置不参与热部署的文件及文件夹
+      enabled: false #设置是否开启热部署

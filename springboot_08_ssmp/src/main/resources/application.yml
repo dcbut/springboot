@@ -1,0 +1,29 @@
+server:
+  port: 80
+  servlet:
+    context-path: /springboot
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mybatis
+      username: root
+      password: root
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:/mapper/*.xml #配置Mapper映射文件
+  type-aliases-package: com.dcxuexi.damian # 配置Mybatis数据返回类型别名（默认别名为类名）
+
+logging:
+  pattern:
+    console: "%d %clr(%5p)  --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+  file:
+    name: console.log
+  logback:
+    rollingpolicy:
+      max-file-size: 400KB
+      file-name-pattern: console.%d{yyyy-mm-dd}.%i.log

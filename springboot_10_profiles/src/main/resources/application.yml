@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: @profile.active@
+    group:
+      "dev": devMVC,devDB
+      "pro": proMVC,proDB
+      "test": testMVC,testDB
